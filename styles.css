@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista aplicada ao body */
+    background-color: #47176e; /* Fundo roxo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 450px; /* Largura do contêiner */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif; /* Aplicando fonte futurista ao título */
+}
+
+form {
+    margin-bottom: 20px;
+    padding: 15px; /* Aumentando o padding do formulário */
+    display: flex; /* Para alinhar o input e as imagens */
+    justify-content: center; /* Centraliza os elementos do formulário */
+    gap: 15px; /* Espaçamento entre os botões */
+    font-family: 'Orbitron', sans-serif; /* Fonte do formulário */
+}
+
+input {
+    padding: 15px; /* Aumentado em 50% */
+    width: 60%; /* Diminuído para acomodar os botões */
+    border: 2px solid #47176e; /* Borda roxa de 1px */
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif; /* Fonte do input */
+}
+
+/* Hover no input */
+input:hover {
+    background-color: #f3e5f5; /* Cor de fundo leve ao passar o mouse */
+    border-color: #47176e; /* Borda roxa mais escura ao passar o mouse */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona sombra para profundidade */
+}
+
+/* Profundidade nos botões */
+#add-button, #delete-button {
+    cursor: pointer;
+    width: 40px; /* Tamanho da imagem */
+    height: 40px; /* Tamanho da imagem */
+    margin-left: 5px;
+    transition: all 0.2s ease-in-out; /* Suavização da animação */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    border-radius: 5px;
+}
+
+#add-button:hover, #delete-button:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4); /* Sombra maior no hover */
+    transform: translateY(-2px); /* Eleva levemente o botão ao passar o mouse */
+}
+
+#add-button:active, #delete-button:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Reduz a sombra quando pressionado */
+    transform: translateY(2px); /* "Aperta" o botão ao clicar */
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.5em;  /* Aumentado em 50% */
+}
+
+li {
+    padding: 15px;  /* Aumentado em 50% */
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif; /* Aplicando fonte futurista às tarefas adicionadas */
+    display: flex;
+    justify-content: space-between; /* Para alinhar o texto da tarefa e o ícone de exclusão */
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
